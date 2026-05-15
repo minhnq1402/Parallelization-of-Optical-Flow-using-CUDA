@@ -1,12 +1,18 @@
 cmake_minimum_required(VERSION 3.18)
 project(OpticalFlowCUDA LANGUAGES CXX CUDA)
 
-# Yêu cầu chuẩn C++17
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# Yêu cầu CMake xuất file chứa đường dẫn cho VS Code đọc
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# Tối ưu hóa kiến trúc GPU (75 cho Turing/RTX2000, 86 cho Ampere/RTX3000, 89 cho Ada/RTX4000)
-# Cứ để mặc định 86 nếu bạn dùng RTX 3060/4060
+# Nới lỏng kiểm tra của CMake và ép trực tiếp cờ C++17
+set(CMAKE_CXX_STANDARD 17)
+
+# Nới lỏng kiểm tra của CMake và ép trực tiếp cờ C++17
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
+set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -std=c++17")
+
+# Tối ưu hóa kiến trúc GPU
 set(CMAKE_CUDA_ARCHITECTURES 86)
 
 # Tìm các gói thư viện bắt buộc

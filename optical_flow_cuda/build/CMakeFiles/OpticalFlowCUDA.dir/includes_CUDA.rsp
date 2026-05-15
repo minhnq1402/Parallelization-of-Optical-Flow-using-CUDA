@@ -1,0 +1,1 @@
+-I"/home/bui-kien/Documents/Parallellization_of_Optical_Flow_using_CUDA/optical_flow_cuda/include" -isystem /usr/include/opencv4
