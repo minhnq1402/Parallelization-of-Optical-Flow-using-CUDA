@@ -369,6 +369,7 @@ CMakeFiles/OpticalFlowCUDA.dir/cuda/sobel_kernel.cu.o: /home/bui-kien/Documents/
   /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h
 
 CMakeFiles/OpticalFlowCUDA.dir/cuda/window_sum.cu.o: /home/bui-kien/Documents/Parallellization_of_Optical_Flow_using_CUDA/optical_flow_cuda/cuda/window_sum.cu \
+  /home/bui-kien/Documents/Parallellization_of_Optical_Flow_using_CUDA/optical_flow_cuda/include/cuda_kernels.cuh \
   /usr/include/alloca.h \
   /usr/include/assert.h \
   /usr/include/builtin_types.h \
@@ -553,10 +554,12 @@ CMakeFiles/OpticalFlowCUDA.dir/cuda/window_sum.cu.o: /home/bui-kien/Documents/Pa
 
 CMakeFiles/OpticalFlowCUDA.dir/src/main.cpp.o: /home/bui-kien/Documents/Parallellization_of_Optical_Flow_using_CUDA/optical_flow_cuda/src/main.cpp \
   /home/bui-kien/Documents/Parallellization_of_Optical_Flow_using_CUDA/optical_flow_cuda/include/core_pipeline.h \
+  /home/bui-kien/Documents/Parallellization_of_Optical_Flow_using_CUDA/optical_flow_cuda/include/cuda_kernels.cuh \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
+  /usr/include/builtin_types.h \
   /usr/include/c++/13/algorithm \
   /usr/include/c++/13/array \
   /usr/include/c++/13/backward/auto_ptr.h \
@@ -587,6 +590,7 @@ CMakeFiles/OpticalFlowCUDA.dir/src/main.cpp.o: /home/bui-kien/Documents/Parallel
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/fstream.tcc \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
@@ -691,6 +695,7 @@ CMakeFiles/OpticalFlowCUDA.dir/src/main.cpp.o: /home/bui-kien/Documents/Parallel
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/fstream \
   /usr/include/c++/13/functional \
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/iomanip \
@@ -739,12 +744,22 @@ CMakeFiles/OpticalFlowCUDA.dir/src/main.cpp.o: /home/bui-kien/Documents/Parallel
   /usr/include/c++/13/unordered_map \
   /usr/include/c++/13/utility \
   /usr/include/c++/13/vector \
+  /usr/include/channel_descriptor.h \
+  /usr/include/crt/host_config.h \
+  /usr/include/crt/host_defines.h \
   /usr/include/ctype.h \
+  /usr/include/cuda_device_runtime_api.h \
+  /usr/include/cuda_runtime.h \
+  /usr/include/cuda_runtime_api.h \
+  /usr/include/device_types.h \
+  /usr/include/driver_functions.h \
+  /usr/include/driver_types.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/libintl.h \
+  /usr/include/library_types.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
@@ -857,7 +872,12 @@ CMakeFiles/OpticalFlowCUDA.dir/src/main.cpp.o: /home/bui-kien/Documents/Parallel
   /usr/include/stdlib.h \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/surface_types.h \
+  /usr/include/texture_types.h \
   /usr/include/time.h \
+  /usr/include/vector_functions.h \
+  /usr/include/vector_functions.hpp \
+  /usr/include/vector_types.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
@@ -937,8 +957,10 @@ CMakeFiles/OpticalFlowCUDA.dir/src/main.cpp.o: /home/bui-kien/Documents/Parallel
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
@@ -1404,8 +1426,6 @@ CMakeFiles/OpticalFlowCUDA.dir/src/utils.cpp.o: /home/bui-kien/Documents/Paralle
 
 /home/bui-kien/Documents/Parallellization_of_Optical_Flow_using_CUDA/optical_flow_cuda/src/pipeline.cpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
@@ -1429,6 +1449,8 @@ CMakeFiles/OpticalFlowCUDA.dir/src/utils.cpp.o: /home/bui-kien/Documents/Paralle
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
@@ -1554,6 +1576,8 @@ CMakeFiles/OpticalFlowCUDA.dir/src/utils.cpp.o: /home/bui-kien/Documents/Paralle
 
 /usr/include/c++/13/vector:
 
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
+
 /usr/include/c++/13/typeinfo:
 
 /home/bui-kien/Documents/Parallellization_of_Optical_Flow_using_CUDA/optical_flow_cuda/src/utils.cpp:
@@ -1621,6 +1645,10 @@ CMakeFiles/OpticalFlowCUDA.dir/src/utils.cpp.o: /home/bui-kien/Documents/Paralle
 /usr/include/c++/13/iosfwd:
 
 /usr/include/c++/13/functional:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h:
+
+/usr/include/c++/13/fstream:
 
 /usr/include/c++/13/ext/type_traits.h:
 
@@ -1725,6 +1753,8 @@ CMakeFiles/OpticalFlowCUDA.dir/src/utils.cpp.o: /home/bui-kien/Documents/Paralle
 /usr/include/c++/13/bits/stl_algo.h:
 
 /usr/include/c++/13/bits/std_mutex.h:
+
+/usr/include/c++/13/bits/sstream.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -2308,6 +2338,8 @@ CMakeFiles/OpticalFlowCUDA.dir/src/utils.cpp.o: /home/bui-kien/Documents/Paralle
 
 /usr/include/asm-generic/errno-base.h:
 
+/usr/include/c++/13/bits/fstream.tcc:
+
 /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h:
 
 /usr/include/sm_35_atomic_functions.h:
@@ -2441,5 +2473,3 @@ CMakeFiles/OpticalFlowCUDA.dir/src/utils.cpp.o: /home/bui-kien/Documents/Paralle
 /usr/include/surface_indirect_functions.h:
 
 /usr/include/c++/13/bits/specfun.h:
-
-/usr/include/c++/13/bits/sstream.tcc:

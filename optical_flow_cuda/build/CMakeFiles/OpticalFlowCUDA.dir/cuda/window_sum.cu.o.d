@@ -179,4 +179,5 @@ CMakeFiles/OpticalFlowCUDA.dir/cuda/window_sum.cu.o : /home/bui-kien/Documents/P
     /usr/include/device_launch_parameters.h \
     /usr/include/c++/12/utility \
     /usr/include/c++/12/bits/stl_relops.h \
-    /usr/include/c++/12/initializer_list
+    /usr/include/c++/12/initializer_list \
+    /home/bui-kien/Documents/Parallellization_of_Optical_Flow_using_CUDA/optical_flow_cuda/include/cuda_kernels.cuh
